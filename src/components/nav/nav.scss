@@ -1,0 +1,42 @@
+@import '../../../node_modules/bulma/sass/utilities/_all.sass';
+@import '../../../node_modules/bulma/sass/components/navbar.sass';
+.navbar-burger {
+    margin-left: 0;
+    border: 0;
+    background: #e8e8e8;
+    width: 60px;
+    display: block;
+    height: 75px;
+}
+
+
+.navbar-brand {
+    height: 75px;
+    background: lightgray;
+}
+
+.navbar-item {
+    margin-top: 15px;
+}
+
+.navbar-burger span {
+    // left: calc(50% - 13px);
+    width: 26px;
+    height: 2px;
+}
+
+.navbar-burger span:nth-child(1) {
+    top: calc(50% - 7px);
+}
+
+.navbar-burger span:nth-child(2) {
+    top: calc(50% - 0px);
+}
+
+.navbar-burger span:nth-child(3) {
+    top: calc(50% + 8px);
+}
+
+.navbar-burger.is-active span:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+}
